@@ -4,6 +4,7 @@ namespace Redbastie\Bootwire\Traits;
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Password;
 use Illuminate\Support\Facades\Validator;
 
@@ -40,7 +41,7 @@ trait ResetsPasswords
         if ($this->hasTooManyAttempts()) {
             $this->addError('password', trans('passwords.throttled'));
         }
-        else if ($this->resetPasswordHandled()) {
+        else if (!$this->resetPasswordHandled()) {
             $this->incrementAttempts();
             $this->addError('password', trans('passwords.token'));
         }
