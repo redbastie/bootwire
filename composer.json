@@ -1,0 +1,29 @@
+{
+    "name": "redbastie/bootwire",
+    "description": "Laravel + Livewire + Bootstrap Auth UI.",
+    "homepage": "https://github.com/redbastie/bootwire",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kevin Dion",
+            "email": "redbastie@icloud.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "laravel/framework": "^8.0",
+        "livewire/livewire": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Redbastie\\Bootwire\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Redbastie\\Bootwire\\Providers\\BootwireServiceProvider"
+            ]
+        }
+    }
+}
