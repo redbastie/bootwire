@@ -1,3 +1,9 @@
+# NO LONGER MAINTAINED
+
+This package is no longer maintained. Please consider my latest package here: https://github.com/redbastie/larawire
+
+-----
+
 # Bootwire
 
 Bootwire is a replacement for the deprecated `laravel/ui` package. It uses Laravel + Livewire + Bootstrap. With a single command it will set you up with basic auth scaffolding for your next Laravel app. This includes login, registration, and password resets.
